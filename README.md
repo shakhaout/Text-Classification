@@ -54,26 +54,3 @@ The goal of text classification is to identify the topic for a piece of text (ne
 
 4.	Output the result of running all the three values of k using all the three k-NN techniques into a single file.
 
-1.2 Naive Bayes (NB)
-Implement the Naive Bayes algorithm for text classification. Your goal is to predict the topic for N (initially take small number of rows, e.g., 50 rows from each file and later increase the number during final submission) number of texts/rows/documents from each file in the Test folder. Naive Bayes used to be the de facto method for text classification.
-1.	Consider all the words of a test text/document/question as independent, then calculate the probability of the statement of being a topic and then pick up the topic which has the highest probability score.
-
-2.	Try different smoothing factors (at least 50 different values).
-
-3.	Output the result of running all the values of smoothing parameter into a single file.
-
-1.3 Comparison and Report Writing
-In this part, you will compare between the performance of k-NN classifier and Nave Bayes classifier for text classification. Follow the steps below:
-1.	Take the best classifier from k-NN. Chose the best value of k and best measure of distance/similarity that gave the best performance.
-
-2.	Compare the best k-NN with Bayesian classifier. Run 50 times both the K-NN and Bayesian learner. Report average accuracy.
-
-
-2.	Dataset Description
-
-1.	You can download the zipped file containing data. (link: https://www.dropbox.com/s/1jdct708qk8p6za/Data.zip?dl=0 )
-
-2.	In the training and test folder, there are respective xml files.
-3.	The topics.txt contains the name of the topics. For each topic, there should be a training xml file and test xml file in the respective folders.
-
-4.	For both training and test type of files, take every line which starts with “<row” and keep only the “Body” portion of this row. Consider only this portion as a document (or text) and the name of the file as the topic name.
